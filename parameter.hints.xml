@@ -3,6 +3,7 @@
     <blacklists>
       <blacklist language="TypeScript">
         <added pattern="Array.map(callbackfn,thisArg)" />
+        <added pattern="Array.find(predicate,thisArg)" />
       </blacklist>
     </blacklists>
   </component>
