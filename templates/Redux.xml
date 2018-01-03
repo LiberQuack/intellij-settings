@@ -1,0 +1,9 @@
+<templateSet group="Redux">
+  <template name="rdxkeys" value="export enum $ENUM_NAMES$ActionKeys {&#10;    FETCH_INIT = &quot;$KEY_NAMES$_fetch_init&quot;,&#10;    FETCHED = &quot;$KEY_NAMES$_fetched&quot;&#10;}" description="Generates redux actions boilerplate" toReformat="true" toShortenFQNames="true">
+    <variable name="ENUM_NAMES" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY_NAMES" expression="snakeCase(ENUM_NAMES)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
