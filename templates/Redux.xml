@@ -1,0 +1,20 @@
+<templateSet group="Redux">
+  <template name="rdxkeys" value="export enum $ENUM_NAMES$ActionKeys {&#10;    FETCH_INIT = &quot;$KEY_NAMES$_fetch_init&quot;,&#10;    FETCHED = &quot;$KEY_NAMES$_fetched&quot;&#10;}" description="Generates redux action keys boilerplate" toReformat="true" toShortenFQNames="true">
+    <variable name="ENUM_NAMES" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY_NAMES" expression="snakeCase(ENUM_NAMES)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rdxactions" value="import {Action, AnyAction} from &quot;redux&quot;&#10;&#10;export const $NAME$Actions = {&#10;&#10;    fetched($ARGUMENT_NAME$: Array&lt;any&gt;): $FETCHED_RETURN$ {&#10;        return {&#10;            type: $FETCHED_ACTION_TYPE$,&#10;            payload: $ARGUMENT_NAME$&#10;        }&#10;    },&#10;&#10;    fetchInited(): Action {&#10;        return {&#10;            type: $FETCH_INIT_ACTION_TYPE$&#10;        }&#10;    },&#10;&#10;    fetch(filters?: any): VoidThunkAction {&#10;        return (dispatch, getState, {axios}) =&gt; {&#10;            dispatch(this.fetchInited());&#10;            axios.get(config.geodata).then(res =&gt; {&#10;                dispatch(this.fetched(res.data.content))&#10;            })&#10;        }&#10;    }&#10;&#10;};&#10;" description="Generates redux actions boilerplate" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="Foo" alwaysStopAt="true" />
+    <variable name="ARGUMENT_NAME" expression="decapitalize(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FETCHED_RETURN" expression="complete()" defaultValue="AnyAction" alwaysStopAt="true" />
+    <variable name="FETCHED_ACTION_TYPE" expression="complete()" defaultValue="&quot;foo_fetched&quot;" alwaysStopAt="true" />
+    <variable name="FETCH_INIT_ACTION_TYPE" expression="" defaultValue="&quot;foo_fetch_init&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
