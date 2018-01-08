@@ -1,8 +1,0 @@
-<application>
-  <component name="FileTypeManager" version="17">
-    <extensionMap>
-      <mapping pattern="PotatoElement" type="PLAIN_TEXT" />
-      <mapping pattern="ReduxConnection" type="PLAIN_TEXT" />
-    </extensionMap>
-  </component>
-</application>
