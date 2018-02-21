@@ -3,6 +3,7 @@
     <variable name="ENUM_NAMES" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
     <variable name="KEY_NAMES" expression="snakeCase(ENUM_NAMES)" defaultValue="" alwaysStopAt="false" />
     <context>
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
