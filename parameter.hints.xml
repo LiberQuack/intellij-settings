@@ -5,6 +5,9 @@
         <added pattern="Array.map(callbackfn,thisArg)" />
         <added pattern="Array.find(predicate,thisArg)" />
       </blacklist>
+      <blacklist language="Java">
+        <added pattern="java.io.File.File(pathname)" />
+      </blacklist>
     </blacklists>
   </component>
 </application>
