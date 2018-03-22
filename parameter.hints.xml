@@ -10,6 +10,7 @@
         <added pattern="org.apache.camel.builder.BuilderSupport.simple(value)" />
         <added pattern="org.apache.camel.model.ProcessorDefinition.delay(delay)" />
         <added pattern="org.apache.camel.builder.ValueBuilder.regexReplaceAll(regex,replacement)" />
+        <added pattern="org.apache.camel.CamelContext.addComponent(componentName,component)" />
       </blacklist>
     </blacklists>
   </component>
