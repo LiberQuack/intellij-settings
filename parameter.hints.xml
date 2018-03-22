@@ -7,6 +7,7 @@
       </blacklist>
       <blacklist language="Java">
         <added pattern="java.io.File.File(pathname)" />
+        <added pattern="org.apache.camel.builder.BuilderSupport.simple(value)" />
       </blacklist>
     </blacklists>
   </component>
