@@ -8,6 +8,7 @@
       <blacklist language="Java">
         <added pattern="java.io.File.File(pathname)" />
         <added pattern="org.apache.camel.builder.BuilderSupport.simple(value)" />
+        <added pattern="org.apache.camel.model.ProcessorDefinition.delay(delay)" />
       </blacklist>
     </blacklists>
   </component>
