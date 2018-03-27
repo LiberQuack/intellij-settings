@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Dockerfile*" type="Dockerfile" />
       <mapping pattern="Jenkinsfile" type="Groovy" />
+      <mapping ext="env" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
