@@ -1,8 +1,9 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern="Jenkinsfile" type="Groovy" />
       <mapping pattern="Dockerfile*" type="Dockerfile" />
+      <mapping pattern="Jenkinsfile" type="Groovy" />
+      <mapping ext="mkv" type="Native" />
     </extensionMap>
   </component>
 </application>
