@@ -4,6 +4,9 @@
       <blacklist language="TypeScript">
         <added pattern="Array.map(callbackfn,thisArg)" />
         <added pattern="Array.find(predicate,thisArg)" />
+        <added pattern="SelectorAPI.find(cssSelector)" />
+        <added pattern="SelectorAPI.nth(index)" />
+        <added pattern="TestController.click(selector,options)" />
       </blacklist>
       <blacklist language="Java">
         <added pattern="java.io.File.File(pathname)" />
