@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Dockerfile*" type="Dockerfile" />
       <mapping pattern="Jenkinsfile" type="Groovy" />
+      <mapping pattern=".mockyeah" type="JSON" />
       <mapping ext="mkv" type="Native" />
     </extensionMap>
   </component>
