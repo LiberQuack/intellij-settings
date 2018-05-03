@@ -5,6 +5,7 @@
       <mapping pattern="Jenkinsfile" type="Groovy" />
       <mapping pattern=".mockyeah" type="JSON" />
       <mapping ext="mkv" type="Native" />
+      <mapping ext="rc" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
