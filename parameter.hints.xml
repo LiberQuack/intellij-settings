@@ -10,6 +10,8 @@
         <added pattern="setTimeout(handler,timeout)" />
         <added pattern="ModelHandlerMixin.fillModel(modelObject,modelTargetField)" />
         <added pattern="ModelHandlerMixin.fillModel(modelObject,modelTargetField,elmProperty)" />
+        <added pattern="ModelHandlerMixin.fillModel(property,modelTargetField,elmProperty)" />
+        <added pattern="ModelHandlerMixin.fillModel(path,elmProperty)" />
       </blacklist>
       <blacklist language="Java">
         <added pattern="java.io.File.File(pathname)" />
