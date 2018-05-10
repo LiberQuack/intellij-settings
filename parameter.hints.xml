@@ -8,6 +8,8 @@
         <added pattern="SelectorAPI.nth(index)" />
         <added pattern="TestController.click(selector,options)" />
         <added pattern="setTimeout(handler,timeout)" />
+        <added pattern="ModelHandlerMixin.fillModel(modelObject,modelTargetField)" />
+        <added pattern="ModelHandlerMixin.fillModel(modelObject,modelTargetField,elmProperty)" />
       </blacklist>
       <blacklist language="Java">
         <added pattern="java.io.File.File(pathname)" />
