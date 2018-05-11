@@ -8,4 +8,13 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="polylit" value="import {html, LitElement} from &quot;@polymer/lit-element&quot;;&#10;&#10;class $CLASS$ extends $EXTENDS$ {&#10;&#10;    constructor() {&#10;        super();&#10;        this.foo = &quot;bar&quot;;    &#10;    }&#10;&#10;    static get properties() {&#10;        return {&#10;            foo: String&#10;        }&#10;    }&#10;&#10;    _render(props) {&#10;        //language=HTML&#10;        return html`&#10;            &lt;div&gt;Hello ${html([props.foo])}&lt;/div&gt;&#10;        `;&#10;    }&#10;&#10;    connectedCallback() {&#10;        super.connectedCallback();&#10;    }&#10;}&#10;&#10;customElements.define(&quot;$TAG$&quot;, $CLASS$);&#10;&#10;export {$CLASS$}" description="Creates a LitElement" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="fileNameWithoutExtension()" defaultValue="&quot;MyElement&quot;" alwaysStopAt="true" />
+    <variable name="EXTENDS" expression="completeSmart()" defaultValue="&quot;LitElement&quot;" alwaysStopAt="true" />
+    <variable name="TAG" expression="lowercaseAndDash(CLASS)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
