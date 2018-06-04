@@ -1,0 +1,17 @@
+<application>
+  <component name="LSPState">
+    <option name="extToServ">
+      <map>
+        <entry key="js,ts">
+          <value>
+            <array>
+              <option value="exe" />
+              <option value="js,ts" />
+              <option value="$USER_HOME$/.nvm/versions/node/v8.9.4/bin/polymer-editor-service" />
+            </array>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>
