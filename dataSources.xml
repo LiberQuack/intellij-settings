@@ -1,0 +1,35 @@
+<application>
+  <component name="dataSourceStorage" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="ROTEAMENTO_HML" uuid="2f56a1d4-0dbd-45ed-952f-f60c1bcf5fe8">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://db.c0axfpdk4ucm.us-east-1.rds.amazonaws.com:5432/db_hml_roteamento</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="ROTEAMENTO_PRD" uuid="c0204dff-10d8-4840-bbfb-eb1c9c3be502">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://db.c0axfpdk4ucm.us-east-1.rds.amazonaws.com:5432/db_app_roteamento</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="NLU_HML" uuid="8fd379d0-ece6-4a18-a1ee-058fb460eef5">
+      <driver-ref>sqlserver.jtds</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sqlserver://10.25.7.150/OI_WEBPANEL</jdbc-url>
+      <driver-properties>
+        <property name="appName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="VERSATIL" uuid="9bb7cc9b-d89b-42a9-bb50-7d6e903c3e9a">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://10.32.207.103:1442;database=ESTATURA</jdbc-url>
+      <driver-properties>
+        <property name="appName" value="DataGrip" />
+        <property name="applicationName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
+  </component>
+</application>
