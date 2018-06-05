@@ -18,13 +18,13 @@
     <factor id="categoricalFeature:prox_referenceList" />
     <factor id="categoricalFeature:recursion" />
     <factor id="completionFinishedType">
-      <dailyData date="4-6-2018">
+      <dailyData date="5-6-2018">
         <observation name="cancelled" value="2,0" />
       </dailyData>
     </factor>
     <factor id="completionType" />
     <factor id="completionUsage">
-      <dailyData date="4-6-2018">
+      <dailyData date="5-6-2018">
         <observation name="count" value="2,0" />
       </dailyData>
     </factor>
@@ -50,6 +50,11 @@
     <factor id="itemPosition" />
     <factor id="mnemonicsUsage" />
     <factor id="prefixLength" />
-    <factor id="timeBetweenTyping" />
+    <factor id="timeBetweenTyping">
+      <dailyData date="5-6-2018">
+        <observation name="average" value="296,222222" />
+        <observation name="count" value="18,0" />
+      </dailyData>
+    </factor>
   </component>
 </application>
